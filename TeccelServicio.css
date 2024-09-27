@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.social-icon {
+    font-size: 48px; /* Tamaño de los iconos */
+    margin: 0 20px; /* Espacio entre los iconos */
+    color: #000000; /* Color de los iconos */
+    transition: color 0.3s ease;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    float: right;
+}
+
+.contact-button {
+    background-color: #6c9bd1;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #5a8ac0;
+}
+
+/* Imagen principal */
+.main-image {
+    width: 50%;
+    max-height: 400px;
+    object-fit: center;
+}
+
+/* Flexbox para las secciones */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Espacio entre texto e imagen */
+    margin-bottom: 40px;
+}
+
+.flex-container img {
+    width: 40%; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    object-fit: cover;
+}
+
+.flex-container p {
+    width: 100%; /* Tamaño del texto */
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    color: #6c9bd1;
+    border-bottom: 2px solid #6c9bd1;
+    padding-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .contact-info {
+        float: none;
+        margin-top: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .flex-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .flex-container img,
+    .flex-container p {
+        width: 100%; /* Ajusta el ancho en pantallas pequeñas */
+    }
+}
+
+/* Botones de compartir */
+.share-buttons {
+    margin-top: 20px;
+}
+
+.share-buttons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #6c9bd1;
+}
